@@ -1,0 +1,19 @@
+1::MSTR:Whole Company::
+1::Technology:This is our technology group:MSTR:
+0:Joe:John Doe:Standard user: Standard group,Technology:000
+0:John:John Smith::MSTR,Public:110
+0:AdminTest:Mike John:The system administrator:MSTR,Technology:001
+
+mstr
+S9fEQtrgAULs
+
+load million udf 10:29
+
+
+CREATE USER PROFILE FOR USER 'test' FOR PROJECT 'Platform Analytics';
+ADD ACE FOR FOLDER 'test (test)' IN FOLDER '\Profiles' USER 'test' ACCESSRIGHTS FULLCONTROL CHILDRENACCESSRIGHTS FULLCONTROL FOR PROJECT 'Platform Analytics';
+
+int i;for(i=0;i<=1000000;1++){execute ("CREATE USER '" +i+ "'PASSWORD'" +i+;");}in ths way you can create 10 users;
+
+WAS-LIUXIAO.corp.microstrategy.com
+

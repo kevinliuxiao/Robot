@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180226 17:16:52.899" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/liuxiao/IdeaProjects/RobotFramework/implementation/testsuites/WebLogin.robot" id="s1" name="WebLogin">
+<test id="s1-t1" name="Open Browser to Login Page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180226 17:16:53.094" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com/'.</msg>
+<status status="PASS" endtime="20180226 17:16:55.452" starttime="20180226 17:16:53.094"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180226 17:16:55.837" starttime="20180226 17:16:55.452"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20180226 17:16:55.837" starttime="20180226 17:16:55.837"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Google</arg>
+</arguments>
+<msg timestamp="20180226 17:16:55.843" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" endtime="20180226 17:16:55.843" starttime="20180226 17:16:55.838"></status>
+</kw>
+<status status="PASS" endtime="20180226 17:16:55.844" starttime="20180226 17:16:55.838"></status>
+</kw>
+<status status="PASS" endtime="20180226 17:16:55.844" starttime="20180226 17:16:53.093"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180226 17:16:55.915" starttime="20180226 17:16:55.844"></status>
+</kw>
+<status status="PASS" endtime="20180226 17:16:55.915" critical="yes" starttime="20180226 17:16:53.092"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180226 17:16:55.916" starttime="20180226 17:16:52.901"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="WebLogin" pass="1">WebLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
